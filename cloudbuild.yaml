@@ -44,7 +44,7 @@ steps:
                         --delivery-pipeline cicd-sample \
                         --description "$(git log -1  --pretty='%s')" \
                         --build-artifacts /workspace/artifacts.json \
-                        --annotations "commit_ui=https://source.cloud.google.com/$PROJECT_ID/cicd-sample/+/$COMMIT_SHA"
+                        --annotations "commit_ui=https://github.com/rengawa/google/commit/$COMMIT_SHA"
 artifacts:
   objects:
     location: 'gs://$PROJECT_ID-gceme-artifacts/'
